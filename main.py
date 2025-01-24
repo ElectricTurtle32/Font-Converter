@@ -4,7 +4,7 @@ from PIL import Image, ImageFont, ImageDraw
 font_path = "font.ttf" 
 font_size = 32  
 font_name = "roboto"
-characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+characters = "1234567890:"
 f = open("font.py", "w")
 
 f.write("import framebuffer \n" + font_name + " = [")
@@ -28,7 +28,7 @@ for char in characters:
 f.write("""
 ]
 def text(string, x, y, buffer):
-    characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    characters = '""" + characters + """'
     index = 0
     for i in string:
         char_index = characters.index(i)  # Find the index of the character
