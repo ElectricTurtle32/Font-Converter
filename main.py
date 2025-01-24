@@ -7,7 +7,7 @@ font_name = "roboto"
 characters = "1234567890:"
 f = open("font.py", "w")
 
-f.write("import framebuffer \n" + font_name + " = [")
+f.write("import framebuf \n" + font_name + " = [")
 for char in characters:
     # Load the font
     font = ImageFont.truetype(font_path, font_size)

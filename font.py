@@ -23,5 +23,5 @@ def text(string, x, y, buffer):
         charBuf = framebuf.FrameBuffer(bytearray(char_data[2]), char_data[0], char_data[1], framebuf.MONO_HLSB)
 
         buffer.blit(charBuf, x+index, y)
-        index += characters.index('i')[0]
+        index += char_data[0]
     
